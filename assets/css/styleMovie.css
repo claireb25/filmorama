@@ -1,0 +1,171 @@
+body{
+    margin:0;
+}
+@media screen and (max-width: 640px) {
+    .img{
+        text-align: center;
+    }
+    .title1{
+        font-size: 40px;
+        color: gray;
+        text-transform: uppercase;
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+     
+    }
+    .genre{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    a{
+        text-align: center;
+     }
+    a.stylebouton {  
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 16 px;
+        color :white;
+        margin-left: 50px;
+        background-color:#339999;
+        width: 100px;
+        padding: 10px 5px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 4px;
+        color:#FFF;
+        text-align: center;
+        transition: .2s ease-out;
+        cursor: pointer;
+        box-shadow: 0 2px 2px 0
+        rgba(0,0,0,0.14),0 1px 5px 0
+        rgba(0,0,0,0.12),0 3px 1px -2px
+        rgba(0,0,0,0.2);
+    }
+    a.stylebouton:hover{
+        box-shadow: 0 3px 3px 0
+        rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+        }
+    .btn{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    p span {
+        color: black;
+        font-size: 24px;
+    }
+    p{
+        color: #339999;
+        font-size: 24px;
+        padding-right: 25px;
+    }
+    .description{
+        color: black;
+        text-align: justify;
+        padding-right: 25px;
+    }
+    
+    .synopsis{
+        color: gray;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-top: 15px;
+    }
+    .poster{
+        width: 240px;
+        height: 360px;
+        padding-left: 25px;
+       text-align: center;
+    }
+    .info{
+        padding-left: 25px;
+    }
+    .bordure{
+        width:100px;
+        height: 2px;
+        background-color:gray;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+.title1{
+    font-size: 50px;
+    color: gray;
+    text-transform: uppercase;
+    margin-left: 50px;
+ 
+}
+.genre{
+    padding-left: 50px;
+}
+a{
+    margin-left: 50px;
+}
+a.stylebouton {  
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16 px;
+    color :white;
+    margin-left: 50px;
+    background-color:#339999;
+    width: 100px;
+    padding: 10px 5px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    color:#FFF;
+    text-align: center;
+    transition: .2s ease-out;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0
+    rgba(0,0,0,0.14),0 1px 5px 0
+    rgba(0,0,0,0.12),0 3px 1px -2px
+    rgba(0,0,0,0.2);
+   
+}
+a.stylebouton:hover{
+    box-shadow: 0 3px 3px 0
+    rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+    }
+
+p span {
+    color: black;
+    font-size: 24px;
+}
+p{
+    color: #339999;
+    font-size: 24px;
+}
+.description{
+    color: black;
+    padding-top: 25px;
+}
+
+.synopsis{
+    color: gray;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+.poster{
+    width: 360px;
+    height: 540px;
+}
+.movie1{
+    display: flex;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.info{
+    padding-left: 25px;
+}
+.bordure{
+    width:300px;
+    height: 2px;
+    background-color: gray;
+    margin-top: 40px;
+}
+}
