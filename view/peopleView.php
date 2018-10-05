@@ -51,12 +51,18 @@
     <!-- Affichage pour chaque film par acteur -->
     <h3 class="title2">Filmographie</h3>
     <div class="movies">
-    <?php foreach($film as $row){?>
-        <div class="movie">
-            <h4><?php echo $row["titre"]?></h4>
-            <img src="<?php echo $row["affiche"];?>" width="180" height="270">
-            <a class="stylebouton" href="film/<?php echo $row['id_film'];?>">Découvrir</a>
-        </div>
+        <?php $uniqueMovie = [];
+        foreach($film as $row){
+            if(!in_array($row['id_film'], $uniqueMovie)){
+                $uniqueMovie[] = $row['id_film'];?>
+                <div class="movie">
+                    <p class="title"><?php echo $row["titre"]?></p>
+                    <p class="img"><img src="<?php echo $row["affiche"];?>" width="180" height="270"></p>
+                    <a class="stylebouton" href="film/<?php echo $row['id_film'];?>">Découvrir</a>
+                </div>
+            <?php } 
+            ?>
+           
         <?php } ?>
     </div>
 </section>

@@ -11,13 +11,9 @@
 </head>
 <body>
 <div class="backgroundHeader">
-    <h1>Filmorama ACS</h1>
+    <h1>Filmorama</h1>
 </div>
 <?php
-
-
-
-        
 
 ?> 
     <h2 class="nationality"><?= $personnesView["nationality"]?></h2>
