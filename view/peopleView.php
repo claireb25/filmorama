@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo $person["nom_personne"]?></title>
-    <base href="http://localhost/filmorama/">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/styleMovie.css">
-</head>
-<body>
-    
-    <div class="backgroundHeader">
-    <h1> <a class="link-style-white" href="homepage">Filmorama</a></h1>
-    </div>
+<?php include('small-header.php')?>
     <h2 class="title1"><?php echo $person["nom_personne"]?> </h2> 
     <section class="personne">
         <div class="header-people">
@@ -64,6 +47,4 @@
         <?php } ?>
     </div>
 </section>
-</body>
-
-</html>
+<?php include('footer.php')?>
