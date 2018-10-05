@@ -1,0 +1,8 @@
+RewriteEngine On   
+RewriteRule ^homepage$ index.php [L,QSA]
+RewriteRule ^(film/)([0-9]+)$  index.php?action=$1&id=$2 [L,QSA]
+RewriteRule ^(genre/)([0-9]+)$ index.php?action=$1&id=$2 [L,QSA]
+RewriteRule ^(annee/)([0-9]+)$ index.php?action=$1&id=$2 [L,QSA]
+RewriteRule ^(personne/)([0-9]+)$ index.php?action=$1&id=$2 [L,QSA]
+RewriteRule ^(search) index.php [L,QSA]
+ErrorDocument 404 /filmorama/index.php?action=404 
