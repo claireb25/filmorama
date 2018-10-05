@@ -1,0 +1,7 @@
+SELECT films.titre, (SELECT GROUP_CONCAT(genres.genre) FROM liaison_film_genre
+INNER JOIN genres ON liaison_film_genre.id_genre = genres.id
+WHERE liaison_film_genre.id_film = films.id) as genre, (SELECT GROUP_CONCAT(personnes.nom_personne)
+FROM liaison_film_personne_fonction
+INNER JOIN fonction ON liaison_film_personne_fonction.id_fonction = fonction.id
+INNER JOIN personnes ON liaison_film_personne_fonction.id_personne = personnes.id
+WHERE liaison_film_personne_fonction.id_film = films.id AND fonction.id = 1) as realisateur FROM films GROUP BY films.titre 
