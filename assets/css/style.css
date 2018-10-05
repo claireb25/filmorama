@@ -1,12 +1,12 @@
 
 @font-face{
     font-family: "RobotoReg";
-    src: url("../fonts/roboto-regular.ttf") format("TrueType")
+    src: url("../fonts/Roboto-Regular.ttf") format("TrueType")
     }
     
 @font-face{
     font-family: "RobotoThin";
-    src: url("../fonts/roboto-thin.ttf") format("TrueType")
+    src: url("../fonts/Roboto-Thin.ttf") format("TrueType")
 }
 html{
     width:auto;

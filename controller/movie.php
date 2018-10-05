@@ -13,7 +13,7 @@ if(isset($_GET['id'])){
             $allActors = explode(",",$movieView["acteurs"]),
             $allGenres = explode(",", $movieView['genre']),
             $allidGenres = explode(",", $movieView['id_genre']),
-            $idYear = (int)$movieView['annee_id'],
+            'idYear' => (int)$movieView['annee_id'],
             $allidReals = explode ("," , $movieView['id_realisateur']),
             $allidActors = explode("," , $movieView['id_acteur']),
         ];

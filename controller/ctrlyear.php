@@ -1,5 +1,5 @@
 <?php 
-require('models/movies.php');
+require('model/model.php');
 $filmsYear = getMoviesbyYear();
-require('views/yearView.php');
+require('view/yearView.php');
 ?>
