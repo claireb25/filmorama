@@ -17,9 +17,9 @@
 
     <h2 class="title1"><?= $film["title"]?></h2>
     <?php $i = 0; ?>
-    <p>
+    <p class="margin-left">
     <?php foreach($allGenres as $genre) {?>
-        <a href="genre/<?php echo $allidGenres[$i]; ?>"><?php echo $genre?></a> 
+        <a class="link-style" href="genre/<?php echo $allidGenres[$i]; ?>"><?php echo $genre?></a> 
     <?php $i++; }?>
     </p>
     <section class="movie1">
@@ -27,19 +27,21 @@
     <p><img class ="poster" src="<?= $film["affiche"]?>"width="240" height="360"></p>
 </div>
 <div class="info">
-    <p class="year"><span>Film sorti en salle en<a href="annee/<?php echo $film['idYear']?>"><?= $film['year']?></a></span></p>
+    <p class="year"><span>Film sorti en salle en <a class="link-style" href="annee/<?php echo $film['idYear']?>"><?= $film['year']?></a></span></p>
     <p><span>Réalisé par</span>  <?php $j = 0; ?>
     <?php  foreach($allReals as $real){?>
-        <a href="personne/<?php echo $allidReals[$j];?>"> 
+        <a class="link-style" href="personne/<?php echo $allidReals[$j];?>"> 
     <?php echo $real; ?></a>  
     <?php $j++;} ?></p>
 
     <p><span>Avec </span><?php $k = 0; ?>
-                    <?php  foreach($allActors as $actor){?>
+
+                    <?php
+                      foreach($allActors as $actor){?>
                     
-                        <a href="personne/<?php echo $allidActors[$k];?>">
+                        <a class="link-style" href="personne/<?php echo $allidActors[$k];?>">
                             <?php echo $actor;
-                            $k++;}?> </a>
+                            $k++;}?></a>
                 
     <p class="synopsis">Synopsis</p>
     <p class="description"><?= $film["synopsis"]?></p>

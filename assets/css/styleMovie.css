@@ -90,18 +90,41 @@ body{
     }
 }
 @media screen and (min-width: 1200px) {
+
 .title1{
     font-size: 50px;
     color: gray;
     text-transform: uppercase;
     margin-left: 50px;
- 
+}
+
+.title2{
+    font-size: 30px;
+    color: gray;
+    text-transform: uppercase;
 }
 .genre{
     padding-left: 50px;
 }
-a{
+
+.personne{
     margin-left: 50px;
+    margin-right:50px;
+}
+.header-people{
+    display: flex;
+}
+.margin-left{
+    margin-left: 50px;
+}
+.link-style{
+    text-decoration: none;
+    color: #339999;
+    font-weight: 500;
+}
+.link-style-white{
+    text-decoration: none;
+    color: white;
 }
 a.stylebouton {  
     text-transform: uppercase;
@@ -135,8 +158,8 @@ p span {
     font-size: 24px;
 }
 p{
-    color: #339999;
-    font-size: 24px;
+
+    font-size: 20px;
 }
 .description{
     color: black;

@@ -89,7 +89,7 @@ h1{
 h1{
     text-align: center;
     margin: 0;
-    
+    text-decoration: none;
     font-family: "RobotoThin";
     font-size: 60px;
     text-transform: uppercase;
