@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <base href="http://localhost/annuaire_film">  -->
+    <base href="http://localhost/filmorama/"/>
     <title>Filmorama</title>
 </head>
 <body>
@@ -14,24 +14,20 @@
 </div>
 <div class="movies">
 <?php
-$resultat=$requete->fetchAll(PDO::FETCH_ASSOC);
- foreach($resultat as $row){
+
+ foreach($movies as $film){
 ?> 
 
 
     <div class="movie">
-        <p class="title"><?= $row["titre"]?></p>
-        <p class="img"><img src="<?= $row["affiche"]?>"width="180" height="270"></p>
-        <p>Réalisé par <?= $row["GROUP_CONCAT(personnes.nom_personne SEPARATOR ' et ')"]?></p>
-        <a class="stylebouton" href= "film/<?= $row["id"]?>">En savoir plus</a>
+        <p class="title"><?= $film["titre"]?></p>
+        <p class="img"><img src="<?= $film["affiche"]?>"width="180" height="270"></p>
+        <p>Réalisé par <?= $film["GROUP_CONCAT(personnes.nom_personne SEPARATOR ' et ')"]?></p>
+        <a class="stylebouton" href= "film/<?= $film["id"]?>">En savoir plus</a>
     </div>
 
-
-    <?php
-
+   <?php
 }
-
-$requete->closeCursor();
 
 ?>
 </div>      

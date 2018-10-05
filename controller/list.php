@@ -2,7 +2,7 @@
 
 require('model/model.php');
 
-$requete = getMovies();
+$movies = getMovies();
 
 
 require('view/indexView.php');

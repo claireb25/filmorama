@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <base href="http://localhost/annuaire_film/">
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,13 +12,7 @@
     <div class="backgroundHeader">
         <h1><?php echo $filmByActor[0]["nom_personne"]?></h1>
     </div>
-    <!-- Retour à la page précédente -->
-    <?php   
-        $url = $_SERVER['HTTP_REFERER'];
-        $path = parse_url($url,PHP_URL_PATH);
-        $mot = explode("/", $path); 
-    ?>
-    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>">précédent</a>
+    
     <!-- Affichage infos acteur -->
     <!-- nom acteur -->
     <h2 class="title1"> </h2> 

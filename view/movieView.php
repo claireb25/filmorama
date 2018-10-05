@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/styleMovie.css">
-    <!-- <base href="http://localhost/annuaire_film">  -->
+    <link rel="stylesheet" href="../assets/css/styleMovie.css"> 
+    <base href="http://localhost/filmorama/"/>
     <title>Filmorama</title>
 </head>
 <body>
@@ -20,23 +20,36 @@
         
 
 ?> 
-    <h2 class="title1"><?= $movieView["titre"]?></h2>
-    <p><a class="genre" href=""><?= $genreView["GROUP_CONCAT(genres.genre SEPARATOR ', ')"]?></a></p>
+    <h2 class="title1"><?= $film["title"]?></h2>
+    <?php $i = 0; ?>
+    <?php foreach($allGenres as $genre) {?>
+        <a href="genre/<?php echo $allidGenres[$i]; ?>"><?php echo $genre?></a> 
+    <?php $i++; }?>
 <section class="movie1">
     <div class="img">
-    <p><img class ="poster" src="../<?= $movieView["affiche"]?>"width="240" height="360"></p>
+    <p><img class ="poster" src="<?= $film["affiche"]?>"width="240" height="360"></p>
 </div>
 <div class="info">
-    <p class="year"><span>Film sorti en salle en </span><?= $anneeView["annee"]?></p>
-    <p><span>Réalisé par </span><a href =""><?= $directorView["GROUP_CONCAT(personnes.nom_personne SEPARATOR' et ')"]?></a></p>
-    <p><span>Avec </span><?= $actorView["GROUP_CONCAT(personnes.nom_personne SEPARATOR', ')"]?></p>
-    <p class="bordure"></p>
+    <p class="year"><span>Film sorti en salle en </span><?= $film['year']?></p>
+    <p><span>Réalisé par</span>  <?php $j = 0; ?>
+    <?php  foreach($allReals as $real){?>
+        <a href="personne/<?php echo $allidReals[$j];?>"> 
+    <?php echo $real; ?></a>  
+    <?php $j++;} ?></p>
+
+    <p><span>Avec </span><?php $k = 0; ?>
+                    <?php  foreach($allActors as $actor){?>
+                    
+                        <a href="personne/<?php echo $allidActors[$k];?>">
+                            <?php echo $actor;
+                            $k++;}?> </a>
+                
     <p class="synopsis">Synopsis</p>
-    <p class="description"><?= $movieView["description"]?></p>
+    <p class="description"><?= $film["synopsis"]?></p>
 </div>
 </section>
 <div class="btn">
-    <a class="stylebouton" href= "../">Retour à la liste</a>
+    <a class="stylebouton" href= "">Retour à la liste</a>
 </div>
 
     
