@@ -7,12 +7,12 @@
     <base href="http://localhost/filmorama/"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/styleMovie.css"> 
-  
+    <link rel="stylesheet" href="assets/css/header-footer.css"> 
     <title>Filmorama - <?= $film["title"]?></title>
 </head>
 <body>
-<div class="backgroundHeader">
-    <h1>Filmorama</h1>
+<div class="small-backgroundHeader">
+    <h1 class="small-h1">Filmorama</h1>
 </div>
 
     <h2 class="title1"><?= $film["title"]?></h2>
@@ -46,9 +46,10 @@
     <p class="synopsis">Synopsis</p>
     <p class="description"><?= $film["synopsis"]?></p>
 </div>
+
 </section>
 <div class="btn">
-    <a class="stylebouton" href= "">Retour à la liste</a>
+    <a class="stylebouton-movie" href= "">Retour à la liste</a>
 </div>
 
     
@@ -59,7 +60,7 @@
 ?>
     
 </body>
-<header>
-
-</header>
+<footer>
+<p class="p-footer">Filmorama - ACS VCB </p>
+</footer>
 </html>

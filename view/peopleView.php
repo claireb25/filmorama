@@ -60,9 +60,7 @@
                     <p class="img"><img src="<?php echo $row["affiche"];?>" width="180" height="270"></p>
                     <a class="stylebouton" href="film/<?php echo $row['id_film'];?>">Découvrir</a>
                 </div>
-            <?php } 
-            ?>
-           
+        <?php } ?>
         <?php } ?>
     </div>
 </section>

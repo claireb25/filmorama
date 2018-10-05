@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <base href="http://localhost/filmorama/"/>
         <link rel="stylesheet" href="assets/css/style.css">
-        
+        <link rel="stylesheet" href="assets/css/header-footer.css">
         <title>Filmorama</title>
     </head>
     <body>
