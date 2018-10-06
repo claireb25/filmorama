@@ -1,6 +1,8 @@
 
 <?php include('small-header.php');?>
-
+<div class="btn">
+    <a class="stylebouton-movie" href= "homepage">Retour à la liste</a>
+</div>
     <h2 class="title1"><?= $film["title"]?></h2>
     <?php $i = 0; ?>
     <p class="margin-left">
@@ -12,6 +14,8 @@
     <div class="img">
     <p><img class ="poster" src="<?= $film["affiche"]?>"width="240" height="360"></p>
 </div>
+
+
 <div class="info">
     <p class="year"><span>Film sorti en salle en <a class="link-style" href="annee/<?php echo $film['idYear']?>"><?= $film['year']?></a></span></p>
     <p><span>Réalisé par</span>  <?php $j = 0; ?>
@@ -34,9 +38,6 @@
 </div>
 
 </section>
-<div class="btn">
-    <a class="stylebouton-movie" href= "">Retour à la liste</a>
-</div>
 
     
     <?php include('footer.php')?>

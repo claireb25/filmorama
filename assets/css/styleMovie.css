@@ -1,27 +1,45 @@
 body{
     margin:0;
 }
-@media screen and (max-width: 640px) {
-    .img{
-        text-align: center;
-    }
+@media screen and (min-width: 320px) {
     .title1{
-        font-size: 40px;
+        font-size: 25px;
         color: gray;
         text-transform: uppercase;
-        text-align: center;
-        padding-left: 25px;
-        padding-right: 25px;
-     
+        margin-left: 50px;
     }
-    .genre{
-        padding-left: 25px;
-        padding-right: 25px;
+    title2{
+        font-size: 30px;
+        color: gray;
+        text-transform: uppercase;
     }
-    a{
-        text-align: center;
-     }
-    a.stylebouton {  
+   
+    
+    .personne{
+        margin-left: 50px;
+        margin-right:50px;
+    }
+    .header-people{
+        display: flex;
+        flex-direction: column;
+    }
+    .margin-left{
+        margin-left: 50px;
+    }
+    .link-style{
+        text-decoration: none;
+        color: #339999;
+    }
+    .link-style-white{
+        text-decoration: none;
+        color: white;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .stylebouton-movie {  
         text-transform: uppercase;
         text-decoration: none;
         font-size: 16 px;
@@ -41,52 +59,43 @@ body{
         rgba(0,0,0,0.14),0 1px 5px 0
         rgba(0,0,0,0.12),0 3px 1px -2px
         rgba(0,0,0,0.2);
+       
     }
     a.stylebouton:hover{
         box-shadow: 0 3px 3px 0
         rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
         }
-    .btn{
-        text-align: center;
-        margin-bottom: 100px;
-    }
+    
     p span {
         color: black;
-        font-size: 24px;
+        font-size: 20px;
     }
     p{
-        color: #339999;
-        font-size: 24px;
-        padding-right: 25px;
+    
+        font-size: 20px;
     }
     .description{
         color: black;
-        text-align: justify;
-        padding-right: 25px;
     }
     
     .synopsis{
         color: gray;
         font-size: 24px;
         text-transform: uppercase;
-        padding-top: 15px;
     }
-    .poster{
-        width: 240px;
-        height: 360px;
-        padding-left: 25px;
-       text-align: center;
+ 
+    .movie1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
     }
-    .info{
-        padding-left: 25px;
-    }
+
     .bordure{
-        width:100px;
+        width:300px;
         height: 2px;
-        background-color:gray;
-        text-align: center;
-        display: block;
-        margin: auto;
+        background-color: gray;
+        margin-top: 40px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -105,6 +114,7 @@ body{
 }
 .genre{
     padding-left: 50px;
+
 }
 
 .personne{
@@ -113,9 +123,11 @@ body{
 }
 .header-people{
     display: flex;
+
 }
 .margin-left{
     margin-left: 50px;
+    margin-bottom: 0px;
 }
 .link-style{
     text-decoration: none;
