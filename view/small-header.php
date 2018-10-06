@@ -12,5 +12,5 @@
     </head>
     <body>
     <div class="small-backgroundHeader">
-        <h1 class="small-h1">Filmorama</h1>
+        <h1 class="small-h1"><a href="homepage">Filmorama</a></h1>
     </div>

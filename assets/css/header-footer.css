@@ -46,12 +46,15 @@
     .small-h1{
         text-align: center;
         margin: 0;
-        text-decoration: none;
         font-family: "RobotoThin";
         font-size: 50px;
         text-transform: uppercase;
-        color: white;
         line-height:220px;
+    
+    }
+    .small-h1 a {
+        text-decoration: none;
+        color: white;
     } 
     footer{
         height: 80px;
